@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="position.css">
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+}
+.box{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    background-color: rgb(231, 253, 154);
+}
+.topic {
+    background-color: black;
+    color: burlywood;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    font-size: larger;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-style: oblique;
+
+    line-height: 1.6;
+    letter-spacing: 2px;
+
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+
+    text-decoration-color: rgb(246, 167, 64);
+    text-transform: uppercase;
+
+    margin: 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+
+    box-shadow: 0px 0px 6px 5px red;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: 2px solid rgb(138, 1, 1);
+    outline-offset: 10px;
+
+}
+
+.topic:hover {
+    letter-spacing: 4px;
+    box-shadow: 0px 0px 6px 5px rgb(71, 237, 5);
+    border: 1px solid rgb(0, 225, 71);
+    border-radius: 330px;
+    outline: 2px solid rgb(225, 206, 206);
+    outline-offset: 10px;
+
+}
+.same{
+    height: 40vh;
+    width: 70vw;
+}
+.box1{
+    border: 2px solid black;
+    position: relative;
+    /* bottom: ; */
+    z-index: ;
+    text-align: center;
+    padding: 2px;
+    background-color: aqua;
+
+}
+
+.box2{
+    position: relative;
+    left: 5vw;
+    bottom: 20vh;
+    /* z-index: 1; */
+    border: 2px solid black;
+    text-align: center;
+    padding: 2px;
+    background-color: chartreuse;
+
+}
+
+.box3{
+    position: relative;
+    left: 10vw;
+    bottom: 40vh;
+    border: 2px solid black;
+    /* z-index: ; */
+    text-align: center;
+    padding: 2px;
+    background-color: chocolate;
+
+}
+
+.box4{
+    position: relative;
+    left: 15vw;
+    bottom: 60vh;
+    /* z-index: ; */
+    border: 2px solid black;
+    text-align: center;
+    padding: 2px;
+    background-color: blueviolet;
+
+}
+.icon{
+    position: fixed;
+    justify-content: center;
+    top: 85vh;
+    left: 85vw;
+    height: 10vh;
+    width: 10vw;
+    background-color: rgb(240, 224, 135);
+    border: 2px solid rgb(42, 244, 10);
+    overflow: hidden;
+
+    box-shadow: 0px 0px 5px 5px rgb(168, 240, 168);
+    border-radius: 40px;
+}
+.icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+.icon:hover{
+    box-shadow: 0px 0px 5px 5px rgb(20, 29, 20);
+    border-radius: 20px;
+    border: 2px solid rgb(1, 4, 1);
+}
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="topic"> position :- static , relative , fixed , sticky </div>
+        <div class="same box1"> Box 1 </div>
+        <div class="same box2"> Box 2 </div>
+        <div class="same box3"> Box 3 </div>
+        <div class="same box4"> Box 4 <br> Exception : transform filter perspective properties can also make an element
+            appear as positioned
+        </div>
+        <div class="icon">
+            <img src="whatsapp icon.png" alt="Whatsapp">hello
+        </div>
+    </div>
+
+</body>
+
+</html>
